@@ -48,7 +48,10 @@ void DoubleLinkedList::addNote() {
 		}
 		newNode->next = START;			//step 3
 		if (START != NULL)
-			START->prev = newNode;		//step4
+			START->prev = newNode;		//step 4
+		newNode->prev = NULL;			//step 5
+		START = newNode;				//step 6
+		return;
 	}
 }
 
