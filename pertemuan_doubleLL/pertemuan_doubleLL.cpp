@@ -25,6 +25,19 @@ public:
 	void searchData();
 };
 
+DoubleLinkedList::DoubleLinkedList() {
+	START = NULL;
+}
+
+void DoubleLinkedList::addNote() {
+	int nim;
+	string nm;
+	cout << "\nEnter the roll number of the Student : ";
+	cin >> nim;
+	cout << "\nEnter the name of the Student : ";
+	cin >> nm;
+}
+
 int main()
 {
 }
