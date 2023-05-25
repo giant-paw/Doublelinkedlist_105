@@ -215,7 +215,3 @@ int main()
 		}
 	}
 }
-
-
-
-//Doublelinkedlist_3nim
