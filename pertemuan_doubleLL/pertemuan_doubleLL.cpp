@@ -186,10 +186,36 @@ int main()
 			char ch;
 			cin >> ch;
 
-
+			switch (ch) {
+			case '1':
+				obj.addNote();
+				break;
+			case '2':
+				obj.hapus();
+				break;
+			case '3':
+				obj.traverse();
+				break;
+			case '4':
+				obj.retraverse();
+				break;
+			case '5':
+				obj.searchData();
+				break;
+			case '6':
+				return 0;
+			default:
+				cout << "\nInvalid option" << endl;
+				break;
+			}
+		}
+		catch (exception& e) {
+			cout << "Check for the values entered" << endl;
+			break;
 		}
 	}
 }
+
 
 
 //Doublelinkedlist_3nim
