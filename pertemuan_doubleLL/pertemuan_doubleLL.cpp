@@ -74,6 +74,12 @@ void DoubleLinkedList::addNote() {
 	current->next = newNode;			//step 7
 }
 
+bool DoubleLinkedList::search(int rolNo, Node** previous, Node** current) {
+	*previous = START;					//step 1.a
+	*current = START;					//step 1.b
+	
+}
+
 int main()
 {
 }
