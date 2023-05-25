@@ -77,7 +77,11 @@ void DoubleLinkedList::addNote() {
 bool DoubleLinkedList::search(int rolNo, Node** previous, Node** current) {
 	*previous = START;					//step 1.a
 	*current = START;					//step 1.b
-	
+	while (*current != NULL && rolNo != (*current)->noMhs) { //step 1.c
+		*previous = *current;			//step 1.d
+		*current = (*current)->next;	//step 1.e
+	}
+	return (*current != NULL);
 }
 
 int main()
